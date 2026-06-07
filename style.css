@@ -1,0 +1,47 @@
+:root {
+  /* Core */
+  --color-bg: #FFFFFF;
+  --color-text: #1A1A1A;
+
+  /* Brand */
+  --color-primary: #3D5FB3;   /* structure, headings, links */
+  --color-secondary: #48BB46; /* actions, highlights */
+  --color-accent: #75C470;    /* hover, subtle emphasis */
+
+  /* Neutrals */
+  --color-muted: #D7D7D7;
+  --color-light: #F5F6F8;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0F1115;
+    --color-text: #E6EAF0;
+
+    --color-primary: #7F90BE;   /* softened blue */
+    --color-secondary: #6EC26F; /* brighter green */
+    --color-accent: #8BC38A;
+
+    --color-muted: #2A2F3A;
+    --color-surface: #181C23;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+button {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+section {
+  background-color: var(--color-surface);
+}
