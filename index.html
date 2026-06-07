@@ -1,161 +1,108 @@
+
 <!--
-Homepage for 1728 Solutions
+VOICE GUIDELINES:
 
-Purpose:
-A calm, precise consulting website that communicates systems thinking, integration across technical and organizational domains, and invites thoughtful engagement.
+- This is a personal consulting practice (not a large firm)
+- Prefer clarity over abstraction
+- Avoid generic consulting language
+- Ground ideas in real experience
 
-This is NOT a typical consulting site.
-- No hype
-- No aggressive sales language
-- Emphasis on clarity, depth, integration, and patience
+- Tone: calm, precise, thoughtful
+- Avoid: hype, buzzwords, exaggerated claims
 
-----------------------------------------
-STRUCTURE
-----------------------------------------
-
-1. HERO
-
-- Short, clear positioning statement
-- Focus on:
-  - systems integration
-  - clarity in complexity
-  - alignment across technical and organizational layers
-
-- Supporting line:
-  articulate the kinds of problems addressed
-
-- Tone:
-  grounded, thoughtful, intellectually honest
-
-----------------------------------------
-
-2. PROBLEM (What’s going wrong)
-
-- Teams and organizations struggle with:
-  - fragmentation across functions
-  - disconnect between technical and organizational work
-  - complexity that obscures clarity
-
-- Keep it recognizable without being generically generic
-
-----------------------------------------
-
-3. SERVICES (Conceptual, not segmented)
-
-- Present 3 high-level service categories
-
-Examples:
-- Systems Integration & Technical Leadership
-- Organizational Effectiveness & Coaching
-- Modeling & Architecture (e.g. digital twin work)
-
-IMPORTANT:
-- Do NOT divide into "Teams" vs "Individuals"
-- Emphasize that work operates across levels
-
-----------------------------------------
-
-4. APPROACH (Atlas introduction)
-
-- Introduce your way of thinking:
-  - systems-oriented
-  - integrative
-  - connecting technical and human systems
-
-- Brief and intriguing, not exhaustive
-
-- Include a link to:
-  /approach
-
-----------------------------------------
-
-5. PROOF (Credibility)
-
-- Two paths:
-
-A. Technical Work
-- Link to /work
-- Frame as real applied systems work
-
-B. Impact
-- Link to /impact
-- Frame as outcomes and experiences
-
-----------------------------------------
-
-6. ENGAGEMENT PATHS
-
-- Introduce two ways to proceed:
-
-A. Services (understand the work)
-B. Marketplace (concrete ways to engage)
-
-- Link to:
-  /services
-  /marketplace
-
-----------------------------------------
-
-7. CTA (Call to Action)
-
-- Invite conversation, not conversion
-
-Examples:
-- "Start a conversation"
-- "Explore ways to work together"
-
-- Link to:
-  /contact
-
-----------------------------------------
-
-DESIGN PRINCIPLES
-
-- Minimalist layout
-- Large, readable typography
-- Plenty of whitespace
-- Grid-based layout for sections
-- Subtle visual hierarchy (no heavy graphics)
-
-/* Use:
-- primary for headings and links
-- secondary for buttons and key highlights
-- accent for hover states
-- neutrals for backgrounds and dividers
-
-Avoid using too many colors in one section.
-Keep the design minimal and calm.
-*/
-
-
-/*
-Use CSS variables consistently:
-
-- background → var(--color-bg)
-- text → var(--color-text)
-- headings/links → var(--color-primary)
-- buttons/highlights → var(--color-secondary)
-- hover accents → var(--color-accent)
-- surfaces/cards → var(--color-surface)
-- dividers → var(--color-muted)
-
-Do not hardcode colors elsewhere.
-*/
-
-----------------------------------------
-
-TONE
-
-- Calm, precise, reflective
-- Avoid:
-  - buzzwords
-  - startup language
-  - exaggerated claims
-
-- Favor:
-  - clarity
-  - restraint
-  - intellectual confidence
-
-----------------------------------------
+- When possible, use "I" instead of "we"
 -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>1728 Solutions — Systems integration, clarity in complexity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">1728 Solutions</a>
+      <nav class="site-nav">
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/approach.html">Approach</a>
+        <a href="/work.html">Work</a>
+        <a href="/impact.html">Impact</a>
+        <a href="/marketplace.html">Marketplace</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Clarity within complexity</h1>
+        <p class="lede">I help organizations align technical systems and human systems so that complex work becomes understandable and effective.</p>
+        <p class="muted">For leaders navigating technical modernization, organizational change, or cross-domain integration.</p>
+      </div>
+    </section>
+
+    <section class="problem">
+      <div class="container">
+        <h2>What’s going wrong</h2>
+        <p>Teams experience fragmentation across functions, a gap between technical and organizational work, and complexity that obscures clear decisions. We work where those gaps meet.</p>
+      </div>
+    </section>
+
+    <section class="services-summary">
+      <div class="container">
+        <h2>How we help</h2>
+        <div class="grid">
+          <article>
+            <h3>Systems Integration & Technical Leadership</h3>
+            <p>Practical design and stewardship of system architectures, APIs, and integration patterns that enable reliable outcomes.</p>
+          </article>
+          <article>
+            <h3>Organizational Effectiveness & Coaching</h3>
+            <p>Coaching and facilitation to align teams, governance, and decision processes with technical realities.</p>
+          </article>
+          <article>
+            <h3>Modeling & Architecture</h3>
+            <p>Lightweight modeling, architecture, and digital-twin thinking to make complexity legible and testable.</p>
+          </article>
+        </div>
+        <p class="actions"><a class="button" href="/services.html">Explore Services</a> <a href="/marketplace.html">Marketplace</a></p>
+      </div>
+    </section>
+
+    <section class="approach-teaser">
+      <div class="container">
+        <h2>Our approach — Atlas</h2>
+        <p>We think in systems: mapping dependencies, clarifying interfaces between people and code, and designing interventions that span technical and organizational boundaries.</p>
+        <p><a href="/approach.html">Read more about Atlas →</a></p>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="container">
+        <h2>Proof</h2>
+        <p>See selected applied work and outcomes that illustrate our approach.</p>
+        <p><a href="/work.html">Technical work</a> — <a href="/impact.html">Impact & outcomes</a></p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Start a conversation</h2>
+        <p>We prefer thoughtful conversations over sales calls. Share a brief note about your situation and we’ll respond with possible next steps.</p>
+        <p><a class="button" href="/contact.html">Contact</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>1728 Solutions — Systems thinking, practical integration.</p>
+      <p><a href="/contact.html">Start a conversation</a></p>
+    </div>
+  </footer>
+</body>
+</html>
