@@ -88,8 +88,8 @@ body {
 }
 .site-nav a { margin-left: var(--space-sm); text-decoration: none; color: inherit; }
 
-.hero { padding: var(--space-lg) 0; }
-.hero h1 { font-size: 2rem; margin: 0 0 var(--space-sm) 0; color: var(--color-primary); }
+.opening { padding: var(--space-lg) 0; }
+.opening h1 { font-size: 2rem; margin: 0 0 var(--space-sm) 0; color: var(--color-primary); }
 .lede { font-size: 1.125rem; margin-bottom: var(--space-sm); }
 .muted { color: #6b6b6b; }
 
@@ -116,5 +116,5 @@ input, textarea { width:100%; padding:10px; border:1px solid var(--color-muted);
 @media (max-width: 800px) {
   .grid { grid-template-columns: 1fr; }
   .site-nav { display: none; }
-  .hero h1 { font-size: 1.5rem; }
+  .opening h1 { font-size: 1.5rem; }
 }
